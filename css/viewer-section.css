@@ -1,0 +1,53 @@
+/* * =========================================== */
+/* * ============= VIEWER SECTION ============== */
+/* * =========================================== */
+
+.viewer {
+  padding: 80px 6% 15px 6%;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.viewer .container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 8%;
+}
+
+.viewer .hero-image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.viewer .mobile-1-img {
+  align-self: flex-start;
+}
+
+.viewer .mobile-2-img {
+  align-self: center;
+}
+
+/* .mobile-1-img {
+  position: relative;
+  width: fit-content;
+  height: 464px;
+  left: 30px;
+} */
+
+.mobile-1-img.arabic {
+  right: 45%;
+  top: -35px;
+}
+
+/* .mobile-2-img {
+  position: relative;
+  width: fit-content;
+  height: 464px;
+  left: 10%;
+  top: 4vw;
+} */
+
+.mobile-2-img.arabic {
+  top: 55px;
+}

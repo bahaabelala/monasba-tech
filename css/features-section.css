@@ -1,0 +1,129 @@
+/* * =========================================== */
+/* * ============ FEATURES SECTION ============= */
+/* * =========================================== */
+
+.features .grid {
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 5%;
+}
+
+.features :where(.left-side, .right-side) {
+  flex-grow: 1;
+  flex-basis: 40%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 8%;
+}
+
+.features .right-side :where(.box-1, .box-2) {
+  overflow: hidden;
+}
+
+.features :where(.box-1, .box-2) {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.features .grid h2 {
+  margin-bottom: 12px;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.31px;
+  color: var(--color-card-title);
+}
+
+.features .grid p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.42px;
+  color: var(--color-card-content-2);
+}
+
+.features .left-side .box-1 .icon-cont {
+  flex-grow: 1;
+}
+
+.features .left-side .box-1 .content-cont {
+  flex-grow: 3;
+}
+
+.features .left-side .box-2 span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.31px;
+  color: var(--color-secondary);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.features .right-side .img-cont {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features .right-side .box-1 .content-cont {
+  position: relative;
+  top: -60px;
+}
+
+.features .right-side .box-2 h2 {
+  color: var(--color-card-title);
+}
+
+.features .right-side .box-2 .img-cont img {
+  position: relative;
+  left: -30px;
+}
+
+.features .bottom-side {
+  border-radius: 32px;
+  background: #211b214f;
+  padding: 100px 17%;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.features .bottom-side .back-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.features .bottom-side .title {
+  margin-bottom: 40px;
+  color: white;
+
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+}
+
+.features .bottom-side .logo {
+  display: block;
+  margin: 0 auto;
+}

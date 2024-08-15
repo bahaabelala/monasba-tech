@@ -1,0 +1,1494 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-secondary: #47004c;
+  --color-link: #fafafa;
+  --color-section-heading: #222222;
+  --color-section-description: #4e4e4e;
+  --color-section-content: #38373a;
+  --color-card-title: #3c0370;
+  --color-card-content: #191720;
+  --color-card-content-2: #584e4e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.section {
+  padding: 60px 5.6%;
+}
+
+.section-header {
+  margin-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-header .title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color: var(--color-section-heading);
+}
+
+.section-header .line {
+  height: 2px;
+  width: 50px;
+  border-radius: 1px;
+  background-color: var(--color-section-heading);
+}
+
+.section-header p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  color: var(--color-section-description);
+}
+
+.hero .app-buttons,
+.viewer .app-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.hero .app-buttons a img,
+.viewer .app-buttons a img,
+.footer-card .app-buttons a img {
+  width: 221.17px;
+  height: 69.72px;
+}
+
+.grid {
+  padding: 0 2%;
+}
+/* 
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+} */
+
+/* .card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.card:hover {
+  transform: scale(1.05);
+} */
+
+/* .card {
+    width: 300px;
+
+  position: relative;
+  background: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+} */
+
+/* * =========================================== */
+/* * ================== HEADER ================= */
+/* * =========================================== */
+
+.header {
+  height: 156px;
+  width: 100%;
+  padding: 0 5.6%;
+  background-color: var(--color-secondary);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  direction: ltr;
+  display: flex;
+  /* gap: 120px; */
+  flex-direction: column;
+}
+
+.logo img {
+  width: 62px;
+  /* Adjusted width */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.logotext img {
+  width: 102px;
+  height: auto;
+}
+
+.logo-text-container {
+  display: flex;
+  align-items: center;
+  gap: 9.5px;
+}
+
+.nav {
+  position: relative;
+  z-index: 2;
+
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav a {
+  border-radius: 20px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  color: var(--color-link);
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.download-app {
+  text-align: right;
+}
+
+.download-btn {
+  width: 165px;
+  height: 52px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 16px;
+  background-color: white;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.lang-btn {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header .toggle-btn {
+  display: none;
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 214px;
+  background-color: var(--color-secondary);
+  z-index: 999;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease-in-out;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* * =========================================== */
+/* * =========== OCCASIONS SECTION ============= */
+/* * =========================================== */
+
+/* .occasions,
+.offers,
+.how-to-order,
+.features {
+  display: flex;
+
+  gap: 38px;
+  flex-direction: column;
+} */
+
+.occasions .grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 23px;
+  grid-row-gap: 50px;
+}
+
+.occasions .card-1 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.occasions .card-2 {
+  grid-area: 2 / 1 / 3 / 4;
+}
+.occasions .card-3 {
+  grid-area: 3 / 1 / 4 / 4;
+}
+.occasions .card-4 {
+  grid-area: 1 / 4 / 2 / 7;
+}
+.occasions .card-5 {
+  grid-area: 2 / 4 / 3 / 7;
+}
+.occasions .card-6 {
+  grid-area: 3 / 4 / 4 / 7;
+}
+.occasions .card-7 {
+  grid-area: 1 / 7 / 4 / 9;
+}
+
+.occasions .card {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.occasions .card p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 41px;
+  color: var(--color-card-content);
+}
+
+.occasions .phone-image-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.occasions .phone-image-card img {
+  width: 100%;
+  height: auto;
+
+  scale: 1.3;
+}
+
+/* * =========================================== */
+/* * =========== OFFERS SECTION ============= */
+/* * =========================================== */
+
+.offers .grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.offers .card {
+  height: 262px;
+  padding: 44px 23px 24px 23px;
+  margin-bottom: 50px;
+  background-color: var(--color-link);
+  border-radius: 28px;
+
+  flex-grow: 1;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offers .card img {
+  width: 154px;
+  height: 120px;
+  border-radius: 16px;
+}
+
+.offers .card p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  /* .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    column-gap: 20px;
+  } */
+
+  .grid {
+    padding: 0;
+  }
+
+  .occasions .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 23px;
+    grid-row-gap: 50px;
+  }
+
+  .occasions .card-1 {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+  .occasions .card-2 {
+    grid-area: 2 / 1 / 3 / 4;
+  }
+  .occasions .card-3 {
+    grid-area: 3 / 1 / 4 / 4;
+  }
+  .occasions .card-4 {
+    grid-area: 1 / 4 / 2 / 7;
+  }
+  .occasions .card-5 {
+    grid-area: 2 / 4 / 3 / 7;
+  }
+  .occasions .card-6 {
+    grid-area: 3 / 4 / 4 / 7;
+  }
+  .occasions .card-7 {
+    display: none;
+  }
+
+  /* .occasions .card {
+    height: fit-content;
+  } */
+
+  .features .grid-3 {
+    column-gap: 10px;
+  }
+
+  .nav,
+  .buttons {
+    display: none;
+  }
+
+  .download-app-language {
+    display: none;
+  }
+
+  .header .toggle-btn {
+    padding-top: 14px;
+    display: block;
+    width: 93.5px;
+    height: 56px;
+  }
+
+  header .container {
+    gap: 69%;
+  }
+
+  .wave {
+    bottom: -35px;
+  }
+
+  .hero-content {
+    right: -10px;
+  }
+
+  .hero .app-buttons {
+    flex-direction: column;
+  }
+
+  .dots-image {
+    width: 15vw;
+    top: -31vw;
+    right: 10vw;
+  }
+
+  .dots-image.arabic {
+    left: 4vw;
+    right: auto;
+  }
+
+  .about-content img {
+    margin-left: 25%;
+  }
+
+  .how-to-order .card {
+    align-content: center;
+    width: 300px;
+    height: 287px;
+  }
+
+  .occasions .card p,
+  .offers .card p {
+    /* font-size: 1rem; */
+  }
+
+  .offers .grid {
+    column-gap: 75px;
+  }
+
+  /* .occasions .card,
+  .offers .card {
+    width: 300px;
+  } */
+
+  .how-to-order .card p {
+    font-size: 30px;
+  }
+
+  .how-to-order .card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .phone {
+    width: 302px;
+    position: relative;
+    left: 40px;
+  }
+
+  .about-content p {
+    width: 80%;
+  }
+
+  .about .container.arabic .about-content {
+    justify-content: center;
+  }
+
+  .about .container.arabic .about-content img {
+    margin-left: 0%;
+  }
+
+  .features .card {
+    height: auto;
+    width: 80%;
+  }
+
+  .viewer {
+    height: 810px;
+  }
+
+  .Mob1 {
+    left: -3%;
+    top: 42%;
+    width: 275px;
+  }
+
+  .phone.arabic {
+    left: -22%;
+  }
+
+  .Mob1.arabic {
+    right: -106%;
+    top: 40%;
+  }
+
+  .Mob2 {
+    left: -85%;
+    top: -17vw;
+    width: 275px;
+  }
+
+  .Mob2.arabic {
+    top: -30%;
+    left: 16%;
+  }
+
+  .viewer .hero-content {
+    top: -3%;
+  }
+
+  .faq-image img {
+    display: none;
+  }
+
+  .faq .faq-questions {
+    width: 100%;
+  }
+
+  .faq-content {
+    flex-direction: column;
+  }
+
+  .faq-item h3 {
+    width: 80%;
+  }
+
+  .faq-item p {
+    width: 90%;
+  }
+
+  .faq {
+    margin-bottom: 35%;
+  }
+
+  footer {
+    height: 384px;
+  }
+
+  .footer-background {
+    display: none;
+  }
+
+  .footer-container {
+    bottom: 130px;
+  }
+
+  .footer-card {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    height: 387.85px;
+    padding: 46.15px 16px 46.15px 16px;
+    gap: 40px;
+    border-radius: 30.77px;
+  }
+
+  .card-words {
+    display: flex;
+    gap: 60px;
+    padding-left: 20px;
+    flex-direction: column;
+  }
+
+  .footer-card div h2 {
+    width: 80%;
+    height: 47px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .footer-card div p {
+    width: 80%;
+    height: 47px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.08px;
+  }
+
+  .footer-card .app-buttons {
+    display: flex;
+    gap: 23px;
+  }
+
+  .footer-links a {
+    font-size: 18px;
+  }
+
+  .footer-bottom p {
+    font-size: 11px;
+  }
+
+  .footer-bottom-links a {
+    font-size: 12px;
+  }
+
+  .social-media-icons img {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    column-gap: 20px;
+  }
+
+  .features .grid-3 {
+    column-gap: 10px;
+  }
+
+  .nav,
+  .buttons {
+    display: none;
+  }
+
+  .download-app-language {
+    display: none;
+  }
+
+  .header .toggle-btn {
+    padding-top: 14px;
+    display: block;
+    width: 93.5px;
+    height: 56px;
+  }
+
+  header .container {
+    gap: 69%;
+  }
+
+  .wave {
+    bottom: -25px;
+  }
+
+  .hero-content {
+    right: -10px;
+  }
+
+  .hero .app-buttons {
+    flex-direction: column;
+  }
+
+  .dots-image {
+    width: 15vw;
+    top: -60vw;
+    right: -27vw;
+  }
+
+  .dots-image.arabic {
+    left: -13vw;
+    right: auto;
+  }
+
+  .phone {
+    width: 302px;
+    position: relative;
+    left: 40px;
+  }
+
+  .about-content p {
+    width: 80%;
+  }
+
+  .occasions .card {
+    width: 80%;
+  }
+
+  .features .card {
+    height: auto;
+    width: 80%;
+  }
+
+  .viewer {
+    height: 810px;
+  }
+
+  .Mob1 {
+    right: 110%;
+    top: 42%;
+  }
+
+  .Mob1.arabic {
+    right: -106%;
+    top: 40%;
+  }
+
+  .Mob2 {
+    left: -104%;
+    top: -20vw;
+  }
+
+  .Mob2.arabic {
+    top: -30%;
+    left: 16%;
+  }
+
+  .viewer .hero-content {
+    top: -3%;
+  }
+
+  .faq-image img {
+    display: none;
+  }
+
+  .faq .faq-questions {
+    width: 100%;
+  }
+
+  .faq-content {
+    flex-direction: column;
+  }
+
+  .faq-item h3 {
+    width: 80%;
+  }
+
+  .faq-item p {
+    width: 90%;
+  }
+
+  .faq {
+    margin-bottom: 35%;
+  }
+
+  footer {
+    height: 384px;
+  }
+
+  .footer-background {
+    display: none;
+  }
+
+  .footer-container {
+    bottom: 130px;
+  }
+
+  .footer-card {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    height: 387.85px;
+    padding: 46.15px 16px 46.15px 16px;
+    gap: 40px;
+    border-radius: 30.77px;
+  }
+
+  .card-words {
+    display: flex;
+    gap: 60px;
+    padding-left: 20px;
+    flex-direction: column;
+  }
+
+  .footer-card div h2 {
+    width: 80%;
+    height: 47px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .footer-card div p {
+    width: 80%;
+    height: 47px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.08px;
+  }
+
+  .footer-card .app-buttons {
+    display: flex;
+    gap: 23px;
+  }
+
+  .footer-links a {
+    font-size: 18px;
+  }
+
+  .footer-bottom p {
+    font-size: 11px;
+  }
+
+  .footer-bottom-links a {
+    font-size: 12px;
+  }
+
+  .social-media-icons img {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+
+@media (max-width: 540px) {
+  header .container {
+    gap: 40%;
+  }
+
+  .how-to-order .card p {
+    font-size: 15px;
+  }
+
+  .viewer .hero-content .app-buttons {
+    margin-left: 0px;
+  }
+
+  .features .grid-3 {
+    width: 100%;
+    column-gap: 0px;
+    justify-items: center;
+  }
+
+  .how-to-order .grid-4 {
+    column-gap: 10px;
+    justify-items: center;
+  }
+
+  .occasions .grid-3 {
+    column-gap: 10px;
+  }
+
+  .viewer {
+    height: 656.41px;
+  }
+
+  .nav,
+  .buttons {
+    display: none;
+  }
+
+  .download-app-language {
+    display: none;
+  }
+
+  .header .toggle-btn {
+    padding-top: 14px;
+    display: block;
+    width: 93.5px;
+    height: 56px;
+  }
+
+  .about .container {
+    gap: 24px;
+  }
+
+  .hero {
+    margin-bottom: 150px;
+  }
+
+  .hero .container {
+    height: 355px;
+    padding-top: 103px;
+    flex-direction: column;
+  }
+
+  .lang-btn {
+    background-color: #47004c;
+    width: 100%;
+    border: darkmagenta;
+    color: white;
+    text-align: left;
+    font-size: 17px;
+  }
+
+  .oval2 {
+    top: -70%;
+    right: 60%;
+  }
+
+  .oval3 {
+    top: -50%;
+    right: 40%;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    justify-items: center;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .offers .card {
+    width: 160px;
+    height: 108.4px;
+  }
+
+  .hero-content {
+    top: 0px;
+    max-width: 78vw;
+  }
+
+  .phone {
+    width: 200px;
+    left: 23%;
+    top: 4%;
+  }
+
+  .phone.arabic {
+    right: 22%;
+    top: 7%;
+  }
+
+  .viewer .hero-content h1 {
+    margin-top: 0;
+    width: 343px;
+    height: 104px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 52px;
+  }
+
+  .hero-image .dots-image.arabic {
+    left: 5%;
+    top: -75%;
+  }
+
+  .offer .card p {
+    font-size: 10px;
+    font: bold;
+  }
+
+  .offer .card img {
+    width: 82px;
+    height: 48px;
+    border-radius: 6px;
+  }
+
+  .offer .card {
+    width: 160px;
+    height: 108px;
+  }
+
+  .occasions .card {
+    width: 160px;
+    height: 108.4px;
+  }
+
+  .number-image {
+    left: 10.6px;
+    top: 0.14px;
+    width: 32px;
+    height: 34px;
+  }
+
+  .how-to-order .card {
+    width: 160px;
+    height: 192px;
+  }
+
+  .hero-image .dots-image {
+    width: 75px;
+    top: -73%;
+    left: -6%;
+  }
+
+  .about-content {
+    flex-direction: row;
+    display: inline-flex;
+  }
+
+  .about-content p {
+    text-align: left;
+    width: 59%;
+    font-size: 12px;
+  }
+
+  .about-content img {
+    content: url("aboutlogo.png");
+    width: 30%;
+    height: 30%;
+  }
+
+  .Mob2 {
+    top: -85px;
+  }
+
+  .Mob1.arabic {
+    width: 60vw;
+    right: -5%;
+    top: 5%;
+  }
+
+  .Mob2.arabic {
+    width: 60vw;
+    top: 5%;
+    right: -16px;
+  }
+
+  .faq-image {
+    display: none;
+  }
+
+  .footer-background {
+    bottom: 6vw;
+  }
+
+  .footer-card {
+    bottom: 15vw;
+  }
+
+  .footer-lang {
+    color: white;
+    text-decoration: none;
+    margin: 0 0 3.5vw 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .line {
+    position: relative;
+    top: 5px;
+    width: 30px;
+  }
+
+  .oval1 {
+    top: -190vw;
+    right: 72vw;
+  }
+
+  .oval2 {
+    display: none;
+  }
+
+  .oval3 {
+    width: 700px;
+    height: 700px;
+    top: -87%;
+    right: 40%;
+  }
+
+  .hero-content {
+    right: 0px;
+  }
+
+  .hero-content p {
+    width: 343px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .hero-content h5 {
+    width: 120px;
+    height: 28px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .footer-card.app-buttons a img {
+    width: 188.46px;
+    height: 61.54px;
+  }
+
+  .wave {
+    bottom: -15px;
+  }
+
+  .phone {
+    width: 205px;
+  }
+
+  .viewer .container.arabic .hero-content h1 {
+    line-height: 105px;
+  }
+
+  .questionstyle h3 {
+    font-size: 14px;
+    width: 302px;
+    height: 26px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+
+  .occasions,
+  .offers,
+  .how-to-order,
+  .features {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .faq-item p {
+    font-size: 12px;
+    width: 328px;
+    height: 60px;
+    font-weight: 400;
+    line-height: 14.52px;
+  }
+
+  .about h2,
+  .occasions h2,
+  .faq h2,
+  .offers h2,
+  .features h2,
+  .how-to-order h2 {
+    font-size: 20px;
+  }
+
+  .occasions .container .grid-3 .card img {
+    width: 55.2px;
+    height: 39.6px;
+  }
+
+  .offers .card img {
+    width: 82px;
+    height: 48px;
+  }
+
+  .how-to-order .card img {
+    width: 60.8px;
+    height: 60.8px;
+  }
+
+  .how-to-order .card .number-image {
+    width: 32px;
+    height: 34px;
+  }
+
+  .features .card p:first-of-type {
+    font-size: 14px;
+
+    width: 158px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  .features .grid-3 .card {
+    width: 160px;
+    height: 188px;
+    padding: 0;
+    border-radius: 8px;
+    gap: 18px;
+    box-shadow: 0 0px 0px rgba(255, 255, 255, 0.932);
+  }
+
+  .features .grid-3 .card img {
+    width: 20px;
+    height: 24px;
+  }
+
+  .features .card p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    width: 160px;
+  }
+
+  .occasions .card p,
+  .offers .card p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .footer-background {
+    position: absolute;
+    top: 518%;
+    height: 16%;
+  }
+
+  .faq {
+    height: 420px;
+    margin-bottom: 80%;
+  }
+
+  footer {
+    height: 500px;
+  }
+
+  .footer-container {
+    bottom: 130px;
+  }
+
+  .footer-card {
+    flex-direction: column;
+    width: 328.85px;
+    height: 387.85px;
+    padding: 46.15px 16px 46.15px 16px;
+    gap: 40px;
+    border-radius: 30.77px;
+    opacity: 0px;
+  }
+
+  .card-words {
+    display: flex;
+    gap: 60px;
+    padding-left: 5px;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer-card div h2 {
+    width: 296.85px;
+    height: 47px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .footer-card div p {
+    text-align: left;
+    width: 296.85px;
+    height: 47px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.08px;
+  }
+
+  .footer-links {
+    width: 328.85px;
+    height: 63.23px;
+    gap: 38.4px;
+    justify-content: center;
+  }
+
+  .footer-links a {
+    font-size: 15.38px;
+    font-weight: 600;
+    line-height: 19.23px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-bottom p {
+    font-size: 13.46px;
+    font-weight: 400;
+    line-height: 19.23px;
+    height: 20px;
+    position: relative;
+    top: 28px;
+    left: 11px;
+  }
+
+  .footer-bottom-links {
+    position: relative;
+    gap: 12px;
+    bottom: 25px;
+    left: 8px;
+  }
+
+  .footer-bottom-links a {
+    font-size: 13.46px;
+    font-weight: 400;
+    line-height: 19.23px;
+    height: 20px;
+  }
+
+  .social-media-icons {
+    gap: 23px;
+  }
+
+  .social-media-icons img {
+    width: 38.46px;
+    height: 38.46px;
+    border-radius: 46.15px;
+  }
+
+  .Mob1 {
+    position: relative;
+    width: 200px;
+    height: 324px;
+    top: 10px;
+    left: 20px;
+  }
+
+  .Mob2 {
+    position: relative;
+    width: 200px;
+    height: 324px;
+    top: 20px;
+    left: -15px;
+  }
+
+  .viewer .container {
+    flex-direction: column;
+  }
+
+  .footer-lang a {
+    font-size: 15.38px;
+    font-weight: 600;
+    line-height: 19.23px;
+  }
+
+  .hero .app-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 227.24px;
+    height: 46.19px;
+    justify-content: space-between;
+  }
+
+  .faq-questions .faq-item.active p {
+    margin: revert;
+  }
+
+  .hero .app-buttons a img {
+    display: flex;
+    flex-direction: row;
+    width: 109.17px;
+    height: 46.19px;
+    justify-content: space-between;
+  }
+
+  .viewer .app-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 25.95px;
+  }
+
+  .viewer .hero-content .app-buttons a img {
+    width: 117.53px;
+    height: 34.82px;
+  }
+
+  .viewer .hero-image {
+    display: flex;
+    flex-direction: row;
+    width: 338.5px;
+    height: 343.58px;
+  }
+
+  .footer-card .app-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .footer-card .app-buttons a img {
+    width: 188.46px;
+    height: 61.54px;
+  }
+
+  .header {
+    height: 82.56px;
+  }
+
+  .hero .hero-content h1 {
+    margin-top: 90px;
+    width: 343px;
+    height: 72px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 36px;
+  }
+
+  .hero .hero-content h5 {
+    width: 227.24px;
+    height: 19.23px;
+    font-size: 15.63px;
+    font-weight: 700;
+    line-height: 18.89px;
+  }
+
+  .header .container {
+    justify-content: space-between;
+  }
+
+  .footer-card.arabic .card-words h2,
+  .footer-card.arabic .card-words p {
+    text-align: right;
+  }
+
+  .footer-background.arabic {
+    top: 512%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .container.arabic {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .footer-background {
+    display: none;
+  }
+
+  .footer-background.arabic {
+    display: none;
+  }
+
+  .offers .card img {
+    border-radius: 6px;
+  }
+
+  .footer-options {
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+  }
+
+  .offers .grid {
+    column-gap: 28px;
+  }
+
+  .about-content img {
+    margin-left: 0%;
+  }
+
+  .line {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,36 @@
+/* * =========================================== */
+/* * ============== ABOUT SECTION ============== */
+/* * =========================================== */
+
+.about {
+  background-color: white;
+}
+
+.about .container {
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+
+.about-content p {
+  width: 59%;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  color: var(--color-section-content);
+}
+
+.about-content img {
+  width: 347.64px;
+  /* Adjust width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+}

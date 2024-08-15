@@ -1,0 +1,90 @@
+/* * =========================================== */
+/* * =============== FAQ SECTION =============== */
+/* * =========================================== */
+
+.faq {
+  margin-top: 120px;
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+.faq .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-content {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+
+.faq-questions {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item h3 {
+  margin: 0 20px 15px 0;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+
+  flex-grow: 1;
+}
+
+.faq-questions .faq-item p {
+  display: none;
+}
+
+.faq-questions .faq-item img {
+  cursor: pointer;
+}
+
+.faq-questions .faq-item.active p {
+  display: block;
+}
+
+.questionstyle {
+  display: flex;
+}
+
+.faq-item p {
+  margin-top: -20px;
+  width: 40vw;
+  color: #333;
+  margin-bottom: 1rem;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+}
+
+.faq-image {
+  position: relative;
+
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shadow-img {
+  position: absolute;
+  bottom: -66px;
+  right: -47px;
+}

@@ -1,0 +1,55 @@
+/* * =========================================== */
+/* * ========== HOW-TO-ORDER SECTION =========== */
+/* * =========================================== */
+
+.how-to-order {
+  margin-bottom: 120px;
+  padding-bottom: 0;
+}
+
+.how-to-order .title-container {
+  margin-bottom: 85px;
+}
+
+.how-to-order .grid {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 3%;
+}
+
+.how-to-order .card {
+  height: 287px;
+  background-color: var(--color-link);
+  border-radius: 28px;
+  padding: 44px 23px 44px 23px;
+
+  position: relative;
+
+  flex-grow: 1;
+  flex-basis: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.how-to-order .card p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+}
+
+.how-to-order .card .icon {
+  width: 95px;
+  height: 95px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.card .number-image {
+  position: absolute;
+  top: -36px;
+  left: 1px;
+}
