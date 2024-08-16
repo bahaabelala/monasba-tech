@@ -3,7 +3,7 @@
 /* * =========================================== */
 
 .viewer {
-  padding: 80px 6% 15px 6%;
+  padding: 65px 6% 15px 6%;
   background-color: var(--color-secondary);
   color: white;
 }
@@ -12,7 +12,7 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  gap: 8%;
+  gap: 65px;
 }
 
 .viewer .hero-image {
@@ -51,3 +51,34 @@
 .mobile-2-img.arabic {
   top: 55px;
 }
+
+@media (max-width: 1060px) {
+  .viewer .container {
+    flex-direction: column;
+  }
+
+  .viewer .container .hero-content {
+    width: 100%;
+  }
+
+  .viewer .hero-image {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 630px) {
+  .viewer {
+    padding: 65px 6%;
+  }
+
+  .viewer .hero-image {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .viewer .app-buttons {
+    flex-direction: column;
+  }
+}
+/* app-buttons */

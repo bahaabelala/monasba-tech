@@ -51,11 +51,12 @@ langBtns.forEach((btn) => {
     }
   });
 });
+
 function toggleSidebar() {
   var sidebar = document.getElementById("sidebar");
-  if (sidebar.style.display === "block") {
-    sidebar.style.display = "none";
+  if (sidebar.style.left === "100vw") {
+    sidebar.style.left = "0";
   } else {
-    sidebar.style.display = "block";
+    sidebar.style.left = "100vw";
   }
 }

@@ -42,7 +42,6 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
-  text-align: left;
 
   flex-grow: 1;
 }
@@ -86,5 +85,18 @@
 .shadow-img {
   position: absolute;
   bottom: -66px;
-  right: -47px;
+  left: 50%;
+  translate: -53% 0;
+}
+
+@media (max-width: 1060px) {
+  .faq-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 80px;
+  }
+
+  .faq-item p {
+    width: 100%;
+  }
 }

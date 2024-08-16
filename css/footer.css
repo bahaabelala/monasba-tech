@@ -59,7 +59,6 @@ footer {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  text-align: left;
 }
 
 .footer-card p {
@@ -68,7 +67,6 @@ footer {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  text-align: left;
 }
 
 .footer-card .app-buttons {
@@ -183,6 +181,42 @@ footer {
 }
 
 .social-media-icons img {
-  width: 2vw;
-  height: 2vw;
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1060px) {
+  .footer-card {
+    height: auto;
+    padding: 40px;
+
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-card .card-words * {
+    text-align: center;
+  }
+
+  .footer-card .app-buttons {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 760px) {
+  .footer-bottom {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 630px) {
+  .footer-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-card .app-buttons {
+    flex-direction: column;
+  }
 }

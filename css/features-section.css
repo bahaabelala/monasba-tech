@@ -21,11 +21,10 @@
   gap: 8%;
 }
 
-.features .right-side :where(.box-1, .box-2) {
-  overflow: hidden;
-}
-
 .features :where(.box-1, .box-2) {
+  margin-bottom: 60px;
+  overflow: hidden;
+
   flex-basis: 45%;
   display: flex;
   flex-direction: column;
@@ -126,4 +125,37 @@
 .features .bottom-side .logo {
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 630px) {
+  .features :where(.left-side, .right-side) {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .features :where(.box-1, .box-2) {
+    width: 100%;
+  }
+
+  .features .left-side .box-1 {
+    height: fit-content;
+  }
+
+  .features .right-side .box-1 .content-cont {
+    position: relative;
+    top: -10px;
+  }
+
+  .features .left-side .box-2 .img-cont img {
+    width: 100%;
+    height: auto;
+  }
+
+  .features .right-side .content-cont {
+    text-align: center;
+  }
+
+  .features .bottom-side {
+    padding: 100px 3%;
+  }
 }

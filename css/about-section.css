@@ -13,15 +13,15 @@
 
 .about-content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 10%;
 }
 
 .about-content p {
-  width: 59%;
+  min-width: 500px;
 
+  flex-grow: 1;
   font-size: 24px;
   font-weight: 500;
   line-height: 40px;
@@ -33,4 +33,19 @@
   /* Adjust width as needed */
   height: auto;
   /* Maintain aspect ratio */
+}
+
+@media (max-width: 1060px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
+}
+
+@media (max-width: 630px) {
+  .about-content p {
+    min-width: auto;
+    max-width: 100%;
+  }
 }

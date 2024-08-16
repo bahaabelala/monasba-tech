@@ -1,0 +1,38 @@
+/* * =========================================== */
+/* * =========== OFFERS SECTION ============= */
+/* * =========================================== */
+
+.offers .grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5vw;
+}
+
+.offers .card {
+  height: 262px;
+  padding: 44px 23px 24px 23px;
+  background-color: var(--color-link);
+  border-radius: 28px;
+
+  flex-grow: 1;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offers .card img {
+  width: 154px;
+  height: 120px;
+  border-radius: 16px;
+}
+
+.offers .card p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}

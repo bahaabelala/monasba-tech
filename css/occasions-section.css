@@ -1,0 +1,134 @@
+/* * =========================================== */
+/* * =========== OCCASIONS SECTION ============= */
+/* * =========================================== */
+
+/* .occasions,
+.offers,
+.how-to-order,
+.features {
+  display: flex;
+
+  gap: 38px;
+  flex-direction: column;
+} */
+
+.occasions .grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 23px;
+  grid-row-gap: 50px;
+}
+
+.occasions .card-1 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.occasions .card-2 {
+  grid-area: 2 / 1 / 3 / 4;
+}
+.occasions .card-3 {
+  grid-area: 3 / 1 / 4 / 4;
+}
+.occasions .card-4 {
+  grid-area: 1 / 4 / 2 / 7;
+}
+.occasions .card-5 {
+  grid-area: 2 / 4 / 3 / 7;
+}
+.occasions .card-6 {
+  grid-area: 3 / 4 / 4 / 7;
+}
+.occasions .card-7 {
+  grid-area: 1 / 7 / 4 / 9;
+}
+
+.occasions .card {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.occasions .card p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 41px;
+  color: var(--color-card-content);
+}
+
+.occasions .phone-image-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.occasions .phone-image-card img {
+  width: 100%;
+  height: auto;
+
+  scale: 1.3;
+}
+
+@media (max-width: 1150px) {
+  .occasions .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 23px;
+    grid-row-gap: 40px;
+  }
+
+  .occasions .card-1 {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+  .occasions .card-2 {
+    grid-area: 2 / 1 / 3 / 4;
+  }
+  .occasions .card-3 {
+    grid-area: 3 / 1 / 4 / 4;
+  }
+  .occasions .card-4 {
+    grid-area: 1 / 4 / 2 / 7;
+  }
+  .occasions .card-5 {
+    grid-area: 2 / 4 / 3 / 7;
+  }
+  .occasions .card-6 {
+    grid-area: 3 / 4 / 4 / 7;
+  }
+
+  .occasions .phone-image-card {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .occasions .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
+
+  .occasions .card-1 {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+  .occasions .card-2 {
+    grid-area: 2 / 1 / 3 / 4;
+  }
+  .occasions .card-3 {
+    grid-area: 3 / 1 / 4 / 4;
+  }
+  .occasions .card-4 {
+    grid-area: 4 / 1 / 5 / 4;
+  }
+  .occasions .card-5 {
+    grid-area: 5 / 1 / 6 / 4;
+  }
+  .occasions .card-6 {
+    grid-area: 6 / 1 / 7 / 4;
+  }
+}
