@@ -9,10 +9,6 @@
   position: relative;
   background-color: var(--color-secondary);
   color: white;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .hero .container {
