@@ -38,7 +38,7 @@
 }
 
 @media (max-width: 520px) {
-  .offers .grid {
+  /* .offers .grid {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -70,7 +70,7 @@
   }
   .offers .grid .card:nth-last-of-type(8) {
     grid-area: 4 / 2 / 5 / 3;
-  }
+  } */
 
   .offers .card {
     height: 230px;
@@ -80,5 +80,9 @@
   .offers .card img {
     width: 120px;
     height: auto;
+  }
+
+  .offers .card p {
+    font-size: 18px;
   }
 }
