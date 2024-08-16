@@ -137,8 +137,8 @@
 }
 
 @media (max-width: 1060px) {
-  .hero {
-    flex-direction: column;
+  .hero .container {
+    justify-content: center;
   }
 
   .wave {
@@ -185,9 +185,9 @@
 }
 
 @media (max-width: 630px) {
-  .hero {
+  /* .hero {
     align-items: flex-start;
-  }
+  } */
 
   .hero .hero-content {
     width: 100%;
