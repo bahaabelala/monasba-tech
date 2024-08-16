@@ -2,6 +2,10 @@
 /* * ============ FEATURES SECTION ============= */
 /* * =========================================== */
 
+.features {
+  padding: 60px 3%;
+}
+
 .features .grid {
   margin-bottom: 50px;
 
