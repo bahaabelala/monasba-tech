@@ -27,7 +27,16 @@ const pho1 = document.getElementById("pho1");
 const container = document.querySelectorAll(".container");
 langBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    const lang = btn.id === "en-btn" ? "en" : "ar";
+    let lang;
+
+    if (btn.id === "en-btn") {
+      lang = "en";
+      btn.setAttribute("id", "ar-btn");
+    } else {
+      lang = "ar";
+      btn.setAttribute("id", "en-btn");
+    }
+
     elementsToTranslate.forEach((el) => {
       el.textContent = el.getAttribute(`data-${lang}`);
     });

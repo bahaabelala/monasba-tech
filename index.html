@@ -70,7 +70,23 @@
               </li>
             </ul>
           </nav>
+
           <div class="download-app-language">
+            <div class="lang-cont">
+              <span
+                href="#"
+                data-en="Language : Arabic"
+                data-ar="اللغه : الانجليزيه"
+                >Language : Arabic</span
+              >
+              <img
+                src="icons/change-lang.png"
+                id="ar-btn"
+                class="lang-btn"
+                alt=""
+              />
+            </div>
+
             <button
               class="download-btn"
               data-en="Download App"
@@ -79,6 +95,7 @@
               Download App
             </button>
           </div>
+
           <img
             class="toggle-btn"
             src="images/toggle.png"
@@ -88,7 +105,7 @@
         </div>
       </header>
 
-      <aside class="sidebar" id="sidebar">
+      <aside class="sidebar" id="sidebar" style="left: 100vw">
         <button class="close-btn" onclick="toggleSidebar()">✖</button>
         <ul>
           <li>
@@ -141,14 +158,37 @@
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              data-en="Download App"
-              data-ar="تحميل التطبيق"
-              onclick="toggleSidebar()"
-            >
-              Download App
-            </a>
+            <div class="download-app-language">
+              <button
+                class="download-btn"
+                data-en="Download App"
+                data-ar="تحميل التطبيق"
+              >
+                Download App
+              </button>
+
+              <div class="lang-cont">
+                <span
+                  href="#"
+                  data-en="Language : Arabic"
+                  data-ar="اللغه : الانجليزيه"
+                  >Language : Arabic</span
+                >
+                <img
+                  src="icons/change-lang.png"
+                  id="ar-btn"
+                  class="lang-btn"
+                  alt=""
+                />
+                <!-- <img
+                  src="images/downarrow.png"
+                  id="ar-btn"
+                  class="lang-btn"
+                  alt=""
+                  style="transform: rotate(180deg)"
+                /> -->
+              </div>
+            </div>
           </li>
         </ul>
       </aside>
@@ -822,30 +862,15 @@
             </div>
             <div class="footer-options">
               <div class="footer-links">
-                <a href="#" data-en="Features" data-ar="الميزات">Features</a>
-                <a href="#" data-en="Services" data-ar="الخدمات">Services</a>
-                <a href="#" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</a>
-              </div>
-              <div class="footer-lang">
-                <span
-                  href="#"
-                  data-en="Language : Arabic"
-                  data-ar="اللغه : الانجليزيه"
-                  >Language : Arabic</span
+                <a href="#features-section" data-en="Features" data-ar="الميزات"
+                  >Features</a
                 >
-                <img
-                  src="images/downarrow.png"
-                  id="en-btn"
-                  class="lang-btn"
-                  alt=""
-                />
-                <img
-                  src="images/downarrow.png"
-                  id="ar-btn"
-                  class="lang-btn"
-                  alt=""
-                  style="transform: rotate(180deg)"
-                />
+                <a href="#offers-section" data-en="Services" data-ar="الخدمات"
+                  >Services</a
+                >
+                <a href="#faq-section" data-en="FAQ" data-ar="الأسئلة الشائعة"
+                  >FAQ</a
+                >
               </div>
             </div>
           </div>

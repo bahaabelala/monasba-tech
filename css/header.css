@@ -5,7 +5,7 @@
 .header {
   height: 156px;
   width: 100%;
-  padding: 0 5.6%;
+  padding: 0 5%;
   background-color: var(--color-secondary);
   color: white;
 
@@ -82,6 +82,12 @@
   background: rgba(255, 255, 255, 0.4);
 }
 
+.download-app-language {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .download-app {
   text-align: right;
 }
@@ -101,7 +107,7 @@
   text-align: center;
   color: var(--color-secondary);
 }
-
+/* 
 .lang-btn {
   margin-left: 5px;
   padding: 5px 10px;
@@ -109,6 +115,43 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
+} */
+
+.lang-cont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-cont span {
+  margin: 0.5vw 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: white;
+}
+
+.lang-cont img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #47004c;
+  cursor: pointer;
+
+  position: relative;
+  top: 0px;
+
+  transition: all 0.3s ease;
+}
+
+.lang-cont img:hover {
+  rotate: 90deg;
+  scale: 1.1;
+}
+
+.lang-cont img:active {
+  scale: 0.9;
 }
 
 .header .toggle-btn {
@@ -181,7 +224,7 @@
 
 @media (max-width: 1060px) {
   .nav,
-  .download-app-language {
+  .header .download-app-language {
     display: none;
   }
 
