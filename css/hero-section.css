@@ -207,7 +207,7 @@
 }
 
 @media (max-width: 520px) {
-  .app-buttons {
+  .hero .app-buttons {
     flex-direction: column;
   }
 }
