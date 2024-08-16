@@ -249,6 +249,8 @@
 
 @media (max-width: 520px) {
   .download-app-language {
+    margin-top: 30px;
+
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
