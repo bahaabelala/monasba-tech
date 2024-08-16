@@ -195,7 +195,7 @@
 
   .hero .hero-content {
     width: 100%;
-    text-align: left;
+    text-align: initial;
 
     align-items: flex-start;
   }
