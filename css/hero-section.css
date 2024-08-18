@@ -79,11 +79,25 @@
 }
 
 .hero-content h1 {
-  margin-bottom: 75px;
+  margin-bottom: 17px;
 
   font-size: 50px;
   font-weight: 800;
   line-height: 79px;
+}
+
+.hero .hero-content h1 {
+  margin-bottom: 75px;
+}
+
+.hero-content p {
+  /* width: 25vw; */
+  margin-bottom: 58px;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36.19px;
+  letter-spacing: 0.3px;
 }
 
 .hero-content h5 {
@@ -188,7 +202,7 @@
 
   .hero .hero-content,
   .hero .hero-content h1 {
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
 
